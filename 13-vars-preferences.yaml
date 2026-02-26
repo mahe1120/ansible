@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    GREET: This is from PLAY
+    GREET: "This is from PLAY"
   vars_files:
     - course.yaml
   vars_prompt:
@@ -12,7 +12,7 @@
   tasks:
   - name: variables from TASK
     vars:
-      GREET: This is from TASK
+      GREET: "This is from TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
   
