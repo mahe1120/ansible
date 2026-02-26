@@ -12,4 +12,4 @@
         AGE: 10
         SCHOOL: TPS
       ansible.builtin.debug:
-        msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}
+        msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}""
