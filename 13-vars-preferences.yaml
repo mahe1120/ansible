@@ -5,10 +5,10 @@
     GREET: "This is from PLAY"
   # vars_files:
   #   - course.yaml
-  vars_prompt:
-    - name: GREET
-      prompt: Enter the value
-      private: false
+  # vars_prompt:
+  #   - name: GREET
+  #     prompt: Enter the value
+  #     private: false
   tasks:
   - name: variables from TASK
     # vars:
