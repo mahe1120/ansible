@@ -6,10 +6,10 @@
     AGE: 3
     SCHOOL: LMS
   tasks:
-    - name: Print Task level vars
-      vars:
-        NAME: Nihal
-        AGE: 10
-        SCHOOL: TPS
-      ansible.builtin.debug:
-        msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}""
+  - name: Print Task level variables
+    vars:
+      NAME: Nihal
+      AGE: 10
+      SCHOOL: TPS
+    ansible.builtin.debug:
+      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}"
