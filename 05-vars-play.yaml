@@ -8,5 +8,5 @@
   tasks:
   - name: Print the Variables.
     ansible.builtin.debug:
-      msg: "Student Name is {{ NAME }}, Age is {{ AGE }}, Studying in {{ TPS }}"
+      msg: "Student Name is {{ NAME }}, Age is {{ AGE }}, Studying in {{ SCHOOL }}"
 
