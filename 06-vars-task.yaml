@@ -1,0 +1,11 @@
+- name: Print Task level Variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: Task level variables
+    vars:
+      NAME: Nihal
+      AGE: 10
+      SCHOOL: TPS
+    ansible.builtin.debug:
+      msg: "Name is {{ NAME }}, Age is {{ AGE }}, Studying in {{ SCHOOL }}"
