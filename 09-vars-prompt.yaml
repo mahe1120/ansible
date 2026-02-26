@@ -1,0 +1,17 @@
+- name: Print Variable using Prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: NAME
+    prompt: Please enter student name
+    private: false # It is not confidential information
+  - name: AGE
+    prompt: Please enter Age
+    private: false
+  - name: SCHOOL
+    prompt: Please enter school name
+    private: false
+  tasks:
+  - name: Print Student information
+    ansible.builtin.debug:
+      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}"
