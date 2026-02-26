@@ -4,4 +4,4 @@
   tasks:
   - name: Print Args Variable
     ansible.builtin.debug:
-      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ TPS }}"
+      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}"
