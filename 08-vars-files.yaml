@@ -6,4 +6,4 @@
   tasks:
   - name: Print Student information
     ansible.builtin.debug:
-      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SSCHOOL }}"
+      msg: "Name is {{ NAME }}, Age is {{ AGE }}, School is {{ SCHOOL }}"
