@@ -1,8 +1,8 @@
 - name: Check the Preference of Variables.
   hosts: local
   connection: local
-  vars:
-    GREET: "This is from PLAY"
+  # vars:
+  #   GREET: "This is from PLAY"
   # vars_files:
   #   - course.yaml
   # vars_prompt:
