@@ -1,0 +1,12 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: # Play level variables
+    NAME: Nihal
+    AGE: 10
+    SCHOOL: TPS
+  tasks:
+  - name: Print the Variables.
+    ansible.builtin.debug:
+      msg: "Student Name is {{ NAME }}, Age is {{ AGE }}, Studying in {{ TPS }}"
+
