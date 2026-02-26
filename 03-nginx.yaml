@@ -1,11 +1,13 @@
 - name: ngix Installation and start service
   hosts: web
+  become: yes # -b or become is for root user
   tasks:
   - name: Install nginx
     ansible.builtin.package:
-      - name: nginx
-        state: installed
+      name: nginx
+      state: present
   - name: Start nginx service
     ansible.builtin.service:
-      - name: nginx
-        state: started
+      name: nginx
+      state: started
+      enabled: yes
