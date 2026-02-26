@@ -1,0 +1,11 @@
+- name: ngix Installation and start service
+  hosts: web
+  tasks:
+  - name: Install nginx
+    ansible.builtin.package:
+      - name: nginx
+        state: installed
+  - name: Start nginx service
+    ansible.builtin.service:
+      - name: nginx
+        state: started
