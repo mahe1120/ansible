@@ -1,18 +1,18 @@
 - name: Check the Preference of Variables.
   hosts: local
   connection: local
-  # vars:
-  #   GREET: "This is from PLAY"
-  # vars_files:
-  #   - course.yaml
-  # vars_prompt:
-  #   - name: GREET
-  #     prompt: Enter the value
-  #     private: false
+  vars:
+    GREET: "This is from PLAY"
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    - name: GREET
+      prompt: Enter the value
+      private: false
   tasks:
   - name: variables from TASK
-    # vars:
-    #   GREET: "This is from TASK"
+    vars:
+      GREET: "This is from TASK"
     ansible.builtin.debug:
       msg: "Hello from {{ GREET }}"
   
