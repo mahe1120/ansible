@@ -1,5 +1,5 @@
 - name: Check Given number is greater than 15
-  host: local
+  hosts: local
   connection: local
   vars:
     my_number: 20
