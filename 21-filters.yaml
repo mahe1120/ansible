@@ -34,8 +34,8 @@
 
 
   - name: Convert upper case to lower case
-    tags:
-    - uppertolower
+    # tags:
+    # - uppertolower
     vars:
       name: "Mahender Goute"
     ansible.builtin.debug:
