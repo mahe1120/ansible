@@ -4,6 +4,6 @@
   tasks:
   - name: Handle undefined variables
     ansible.builtin.debug:
-    msg: "Hello  {{ person | default('Suresh')}}" # person is not defined so it will take default value mentioned as "Suresh".
+      msg: "Hello  {{ person | default('Suresh')}}" # person is not defined so it will take default value mentioned as "Suresh".
 
     
