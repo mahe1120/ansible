@@ -6,4 +6,19 @@
     ansible.builtin.debug:
       msg: "Hello  {{ person | default('Suresh')}}" # person is not defined so it will take default value mentioned as "Suresh".
 
+  - name: Convert string to list
+    vars:
+      fruits: "apple, banana, orange, grapes"
+    ansible.builtin.debug:
+      msg: "fruits are {{ fruits | split(',') }}"
+
+  - name: Convert map to list
+    vars:
+      course:
+        name: ansible
+        duration: 10hrs
+        trainer: siva
+    ansible.builtin.debug:
+      msg: "Course info: {{ course | dict2items }}"
+
     
